@@ -1,0 +1,1125 @@
+1.create a new file or update its timestamp
+user@ramya:~$ touch file1
+user@ramya:~$ touch file2
+
+2.concatenate files and print to stdout
+user@ramya:~$ cat>file1
+hello
+
+3.copy files
+user@ramya:~$ cp file1 file2
+
+4.move files or rename files
+user@ramya:~$ mv file1 file2
+
+5.remove files and directories
+user@ramya:~$ rm file2
+
+6.make a directory
+user@ramya:~$ mkdir dir1
+
+7.remove directory
+user@ramya:~$ rmdir dir1
+
+8.change directory
+user@ramya:~$ cd dir1
+
+9.print the present working directory
+user@ramya:~$ pwd dir1
+/home/user
+
+10) ls: List directory contents
+user@ramya~/dir1$ ls -alt
+total 16
+drwxrwxr-x  2 user user  4096 Apr 20 21:07 .
+drwxr-xr-x 46 user user 12288 Apr 20 21:07 ..
+user@ramya:~/dir1$ ls -l
+total 0
+user@ramya:~/dir1$ ls -ltr
+total 0
+user@ramya:~/dir1$ ls -a
+.  ..
+
+11) which: Locate a command
+user@ramya:~$ which -a cat
+/usr/bin/cat
+/bin/cat
+user@ramya:~$ cat
+hello
+hello
+
+12) man: Interface for working with the online reference manuals.
+user@ramya:~$ man cat
+
+13) su: Change user-id or become super-user.
+user@ramya:~$ su user
+Password: 
+
+16) du: Estimate disk usage is blocks
+user@ramya:~$ du
+12	./week10
+1100	./Documents
+4	./.gnupg/private-keys-v1.d
+16	./.gnupg
+44	./week 4
+3140	./coa
+11204	./mefa
+24	./week 9(2)
+48	./week8
+4	./snap/snap-store/959/.config/gtk-2.0
+8	./snap/snap-store/959/.config/autostart
+4	./snap/snap-store/959/.config/ibus
+8	./snap/snap-store/959/.config/fontconfig
+4	./snap/snap-store/959/.config/gtk-3.0
+4	./snap/snap-store/959/.config/dconf
+52	./snap/snap-store/959/.config
+192	./snap/snap-store/959/.local/share/glib-2.0/schemas
+196	./snap/snap-store/959/.local/share/glib-2.0
+44	./snap/snap-store/959/.local/share/icons/Humanity-Dark
+324	./snap/snap-store/959/.local/share/icons/Humanity
+8	./snap/snap-store/959/.local/share/icons/LoginIcons
+8	./snap/snap-store/959/.local/share/icons/hicolor
+84	./snap/snap-store/959/.local/share/icons/ubuntu-mono-dark
+92	./snap/snap-store/959/.local/share/icons/ubuntu-mono-light
+60	./snap/snap-store/959/.local/share/icons/Adwaita
+624	./snap/snap-store/959/.local/share/icons
+824	./snap/snap-store/959/.local/share
+828	./snap/snap-store/959/.local
+888	./snap/snap-store/959
+4	./snap/snap-store/638/.config/gtk-2.0
+8	./snap/snap-store/638/.config/autostart
+4	./snap/snap-store/638/.config/ibus
+8	./snap/snap-store/638/.config/fontconfig
+4	./snap/snap-store/638/.config/gtk-3.0
+4	./snap/snap-store/638/.config/dconf
+52	./snap/snap-store/638/.config
+192	./snap/snap-store/638/.local/share/glib-2.0/schemas
+196	./snap/snap-store/638/.local/share/glib-2.0
+44	./snap/snap-store/638/.local/share/icons/Humanity-Dark
+324	./snap/snap-store/638/.local/share/icons/Humanity
+8	./snap/snap-store/638/.local/share/icons/LoginIcons
+8	./snap/snap-store/638/.local/share/icons/hicolor
+84	./snap/snap-store/638/.local/share/icons/ubuntu-mono-dark
+92	./snap/snap-store/638/.local/share/icons/ubuntu-mono-light
+60	./snap/snap-store/638/.local/share/icons/Adwaita
+624	./snap/snap-store/638/.local/share/icons
+824	./snap/snap-store/638/.local/share
+828	./snap/snap-store/638/.local
+888	./snap/snap-store/638
+24	./snap/snap-store/common/.cache/gio-modules
+4	./snap/snap-store/common/.cache/appstream
+60	./snap/snap-store/common/.cache/fontconfig
+324	./snap/snap-store/common/.cache/gnome-software/cssresource
+4792	./snap/snap-store/common/.cache/gnome-software/appstream
+4	./snap/snap-store/common/.cache/gnome-software/fwupd
+1372	./snap/snap-store/common/.cache/gnome-software/odrs
+856	./snap/snap-store/common/.cache/gnome-software/icons
+7352	./snap/snap-store/common/.cache/gnome-software
+72	./snap/snap-store/common/.cache/immodules
+7520	./snap/snap-store/common/.cache
+7524	./snap/snap-store/common
+9304	./snap/snap-store
+9308	./snap
+8	./class
+1800	./Pictures
+356	./dsa
+4	./Templates
+4	./.audacity-data/Plug-Ins
+4	./.audacity-data/Macros
+4	./.audacity-data/AutoSave
+60	./.audacity-data
+28	./week 3
+856	./dbms lab
+48	./.java/fonts/11.0.20.1
+52	./.java/fonts
+56	./.java
+8	./.thunderbird/spqrnz9e.default
+4	./.thunderbird/10k1xkef.default-release/crashes/events
+8	./.thunderbird/10k1xkef.default-release/crashes
+4	./.thunderbird/10k1xkef.default-release/minidumps
+4	./.thunderbird/10k1xkef.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+148	./.thunderbird/10k1xkef.default-release/storage/permanent/chrome/idb
+156	./.thunderbird/10k1xkef.default-release/storage/permanent/chrome
+160	./.thunderbird/10k1xkef.default-release/storage/permanent
+164	./.thunderbird/10k1xkef.default-release/storage
+4	./.thunderbird/10k1xkef.default-release/security_state
+20	./.thunderbird/10k1xkef.default-release/datareporting/archived/2024-01
+12	./.thunderbird/10k1xkef.default-release/datareporting/archived/2023-12
+36	./.thunderbird/10k1xkef.default-release/datareporting/archived
+48	./.thunderbird/10k1xkef.default-release/datareporting
+13924	./.thunderbird/10k1xkef.default-release
+4	./.thunderbird/Pending Pings
+4	./.thunderbird/Crash Reports/events
+12	./.thunderbird/Crash Reports
+13960	./.thunderbird
+40	./linklist
+4	./Music
+4	./.config/gnome-session/saved-session
+8	./.config/gnome-session
+4	./.config/transmission/blocklists
+4	./.config/transmission/resume
+4	./.config/transmission/torrents
+16	./.config/transmission
+100	./.config/vlc
+12	./.config/gnome-games
+4	./.config/libreoffice/4/user/uno_packages/cache/uno_packages
+8	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+8	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+40	./.config/libreoffice/4/user/uno_packages/cache/registry
+48	./.config/libreoffice/4/user/uno_packages/cache
+52	./.config/libreoffice/4/user/uno_packages
+4	./.config/libreoffice/4/user/backup
+16	./.config/libreoffice/4/user/store
+4	./.config/libreoffice/4/user/psprint
+8	./.config/libreoffice/4/user/autotext
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/popupmenu
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/menubar
+1044	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/ui
+1072	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/popupmenu
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/menubar
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/popupmenu
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/menubar
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/popupmenu
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc/menubar
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/scalc
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/popupmenu
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw/menubar
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/sdraw
+1188	./.config/libreoffice/4/user/config/soffice.cfg/modules
+1192	./.config/libreoffice/4/user/config/soffice.cfg
+1240	./.config/libreoffice/4/user/config
+12	./.config/libreoffice/4/user/gallery
+4	./.config/libreoffice/4/user/autocorr
+8	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/bundled/registry
+48	./.config/libreoffice/4/user/extensions/bundled
+8	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/shared/registry
+48	./.config/libreoffice/4/user/extensions/shared
+4	./.config/libreoffice/4/user/extensions/tmp/extensions
+8	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/tmp/registry
+48	./.config/libreoffice/4/user/extensions/tmp
+152	./.config/libreoffice/4/user/extensions
+16	./.config/libreoffice/4/user/basic/Standard
+28	./.config/libreoffice/4/user/basic
+1016	./.config/libreoffice/4/user/database/biblio
+1024	./.config/libreoffice/4/user/database
+8	./.config/libreoffice/4/user/pack/autotext
+36	./.config/libreoffice/4/user/pack/config/soffice.cfg/modules/swriter/ui
+40	./.config/libreoffice/4/user/pack/config/soffice.cfg/modules/swriter
+44	./.config/libreoffice/4/user/pack/config/soffice.cfg/modules
+48	./.config/libreoffice/4/user/pack/config/soffice.cfg
+64	./.config/libreoffice/4/user/pack/config
+16	./.config/libreoffice/4/user/pack/basic/Standard
+28	./.config/libreoffice/4/user/pack/basic
+20	./.config/libreoffice/4/user/pack/database/biblio
+28	./.config/libreoffice/4/user/pack/database
+8	./.config/libreoffice/4/user/pack/wordbook
+1576	./.config/libreoffice/4/user/pack
+8	./.config/libreoffice/4/user/wordbook
+5244	./.config/libreoffice/4/user
+5252	./.config/libreoffice/4
+5256	./.config/libreoffice
+108	./.config/pulse
+8	./.config/totem
+12	./.config/gedit
+8	./.config/eog
+4	./.config/enchant
+8	./.config/ibus/bus
+12	./.config/ibus
+8	./.config/nautilus
+4	./.config/goa-1.0
+16	./.config/evolution/sources
+20	./.config/evolution
+8	./.config/gnome-control-center/backgrounds
+12	./.config/gnome-control-center
+8	./.config/gtk-3.0
+4	./.config/update-notifier
+4	./.config/yelp
+28	./.config/dconf
+5668	./.config
+4	./Public
+1053832	./Downloads/AbdulBari/8. Loops
+1185616	./Downloads/AbdulBari/7. Conditional Statements
+749436	./Downloads/AbdulBari/14. Interfaces
+719648	./Downloads/AbdulBari/1. Introduction
+1441932	./Downloads/AbdulBari/12. Inheritance
+861608	./Downloads/AbdulBari/2. Data Types - Variables and Literals
+690344	./Downloads/AbdulBari/16. Static and Final
+590600	./Downloads/AbdulBari/17. Packages
+2412	./Downloads/AbdulBari/New folder
+349944	./Downloads/AbdulBari/4. Features and Architecture
+344136	./Downloads/AbdulBari/26. Date and Time API
+1858872	./Downloads/AbdulBari/11. Object-Oriented Programming
+480660	./Downloads/AbdulBari/15. Inner classes
+1629340	./Downloads/AbdulBari/6. String Class and Printing
+1488512	./Downloads/AbdulBari/10. Methods
+3375512	./Downloads/AbdulBari/19. MutiThreading
+1274852	./Downloads/AbdulBari/5. Operator and Expressions
+180980	./Downloads/AbdulBari/22. Lambda Expressions
+334616	./Downloads/AbdulBari/24. Java Generics
+276716	./Downloads/AbdulBari/3. Setup Java Environment
+2133712	./Downloads/AbdulBari/23. Java IO Streams
+2660028	./Downloads/AbdulBari/25. Collection Framework
+590364	./Downloads/AbdulBari/13. Abstract Classes
+1939996	./Downloads/AbdulBari/18. Exception Handling
+1005976	./Downloads/AbdulBari/9. Arrays
+27219648	./Downloads/AbdulBari
+27663816	./Downloads
+4	./c language/Documents
+40	./c language/week3
+56	./c language/week4
+4992320	./c language/Downloads
+56	./c language/week2
+44	./c language/ass3
+8	./c language/week1/week2
+56	./c language/week1
+44	./c language/ass.1
+4993444	./c language
+4	./.ssh
+4	./.cache/ibus-table
+96	./.cache/.fr-JJujzR/javanotes/notes
+100	./.cache/.fr-JJujzR/javanotes
+104	./.cache/.fr-JJujzR
+12	./.cache/simple-scan
+8	./.cache/.fr-RApXBs
+4	./.cache/.fr-qcY4OO
+540	./.cache/thumbnails/fail/gnome-thumbnail-factory
+544	./.cache/thumbnails/fail
+11668	./.cache/thumbnails/large
+9160	./.cache/thumbnails/normal
+21376	./.cache/thumbnails
+17060	./.cache/.fr-R3k0v1/Week_1
+17064	./.cache/.fr-R3k0v1
+4	./.cache/.fr-6QF5o7
+4	./.cache/thunderbird/spqrnz9e.default
+3520	./.cache/thunderbird/10k1xkef.default-release/startupCache
+4	./.cache/thunderbird/10k1xkef.default-release/cache2/doomed
+684	./.cache/thunderbird/10k1xkef.default-release/cache2/entries
+16	./.cache/thunderbird/10k1xkef.default-release/cache2/trash1980024123
+708	./.cache/thunderbird/10k1xkef.default-release/cache2
+4	./.cache/thunderbird/10k1xkef.default-release/safebrowsing/google4
+8	./.cache/thunderbird/10k1xkef.default-release/safebrowsing
+4240	./.cache/thunderbird/10k1xkef.default-release
+4248	./.cache/thunderbird
+6484	./.cache/obexd
+4	./.cache/totem/media
+4	./.cache/totem/stream-buffer
+12	./.cache/totem
+8	./.cache/ubuntu-report
+96	./.cache/.fr-fx0xH0/javanotes/notes
+100	./.cache/.fr-fx0xH0/javanotes
+104	./.cache/.fr-fx0xH0
+20	./.cache/ibus/bus
+24	./.cache/ibus
+20	./.cache/mozilla/firefox/dniunrby.default-release/thumbnails
+12304	./.cache/mozilla/firefox/dniunrby.default-release/startupCache
+4	./.cache/mozilla/firefox/dniunrby.default-release/cache2/doomed
+1074904	./.cache/mozilla/firefox/dniunrby.default-release/cache2/entries
+1075616	./.cache/mozilla/firefox/dniunrby.default-release/cache2
+12	./.cache/mozilla/firefox/dniunrby.default-release/settings/main/ms-language-packs/browser/newtab
+16	./.cache/mozilla/firefox/dniunrby.default-release/settings/main/ms-language-packs/browser
+20	./.cache/mozilla/firefox/dniunrby.default-release/settings/main/ms-language-packs
+24	./.cache/mozilla/firefox/dniunrby.default-release/settings/main
+28	./.cache/mozilla/firefox/dniunrby.default-release/settings
+13440	./.cache/mozilla/firefox/dniunrby.default-release/safebrowsing/google4
+15528	./.cache/mozilla/firefox/dniunrby.default-release/safebrowsing
+1103500	./.cache/mozilla/firefox/dniunrby.default-release
+4	./.cache/mozilla/firefox/rxdgp9tl.default
+1103508	./.cache/mozilla/firefox
+1103512	./.cache/mozilla
+4	./.cache/.fr-tW1KK6
+4	./.cache/shotwell/thumbs/thumbs360
+4	./.cache/shotwell/thumbs/thumbs128
+12	./.cache/shotwell/thumbs
+20	./.cache/shotwell
+12	./.cache/update-manager-core
+24	./.cache/fontconfig
+12	./.cache/mesa_shader_cache/5a
+12	./.cache/mesa_shader_cache/19
+8	./.cache/mesa_shader_cache/41
+8	./.cache/mesa_shader_cache/8e
+20	./.cache/mesa_shader_cache/4c
+8	./.cache/mesa_shader_cache/60
+8	./.cache/mesa_shader_cache/e6
+8	./.cache/mesa_shader_cache/ac
+12	./.cache/mesa_shader_cache/f4
+8	./.cache/mesa_shader_cache/25
+16	./.cache/mesa_shader_cache/80
+24	./.cache/mesa_shader_cache/10
+8	./.cache/mesa_shader_cache/d2
+8	./.cache/mesa_shader_cache/34
+12	./.cache/mesa_shader_cache/c8
+20	./.cache/mesa_shader_cache/e3
+16	./.cache/mesa_shader_cache/b5
+8	./.cache/mesa_shader_cache/53
+12	./.cache/mesa_shader_cache/13
+20	./.cache/mesa_shader_cache/a8
+12	./.cache/mesa_shader_cache/49
+16	./.cache/mesa_shader_cache/9c
+16	./.cache/mesa_shader_cache/f5
+8	./.cache/mesa_shader_cache/de
+8	./.cache/mesa_shader_cache/bb
+12	./.cache/mesa_shader_cache/d4
+20	./.cache/mesa_shader_cache/46
+16	./.cache/mesa_shader_cache/f1
+8	./.cache/mesa_shader_cache/e5
+16	./.cache/mesa_shader_cache/5e
+12	./.cache/mesa_shader_cache/0d
+12	./.cache/mesa_shader_cache/92
+8	./.cache/mesa_shader_cache/70
+8	./.cache/mesa_shader_cache/a4
+8	./.cache/mesa_shader_cache/ec
+12	./.cache/mesa_shader_cache/b7
+8	./.cache/mesa_shader_cache/7d
+8	./.cache/mesa_shader_cache/0b
+8	./.cache/mesa_shader_cache/28
+12	./.cache/mesa_shader_cache/f3
+8	./.cache/mesa_shader_cache/cd
+8	./.cache/mesa_shader_cache/23
+8	./.cache/mesa_shader_cache/d3
+16	./.cache/mesa_shader_cache/e1
+8	./.cache/mesa_shader_cache/62
+16	./.cache/mesa_shader_cache/2b
+8	./.cache/mesa_shader_cache/74
+8	./.cache/mesa_shader_cache/66
+8	./.cache/mesa_shader_cache/61
+12	./.cache/mesa_shader_cache/55
+12	./.cache/mesa_shader_cache/6f
+8	./.cache/mesa_shader_cache/fe
+16	./.cache/mesa_shader_cache/93
+8	./.cache/mesa_shader_cache/df
+12	./.cache/mesa_shader_cache/c5
+12	./.cache/mesa_shader_cache/4f
+16	./.cache/mesa_shader_cache/7e
+12	./.cache/mesa_shader_cache/6d
+8	./.cache/mesa_shader_cache/b0
+12	./.cache/mesa_shader_cache/84
+8	./.cache/mesa_shader_cache/71
+12	./.cache/mesa_shader_cache/d7
+12	./.cache/mesa_shader_cache/20
+12	./.cache/mesa_shader_cache/b2
+8	./.cache/mesa_shader_cache/f8
+8	./.cache/mesa_shader_cache/58
+8	./.cache/mesa_shader_cache/cf
+8	./.cache/mesa_shader_cache/88
+12	./.cache/mesa_shader_cache/79
+8	./.cache/mesa_shader_cache/9f
+8	./.cache/mesa_shader_cache/15
+16	./.cache/mesa_shader_cache/36
+8	./.cache/mesa_shader_cache/a7
+12	./.cache/mesa_shader_cache/6a
+12	./.cache/mesa_shader_cache/2f
+8	./.cache/mesa_shader_cache/ea
+8	./.cache/mesa_shader_cache/f6
+8	./.cache/mesa_shader_cache/fb
+12	./.cache/mesa_shader_cache/a3
+8	./.cache/mesa_shader_cache/c3
+12	./.cache/mesa_shader_cache/a6
+12	./.cache/mesa_shader_cache/3d
+12	./.cache/mesa_shader_cache/27
+12	./.cache/mesa_shader_cache/16
+16	./.cache/mesa_shader_cache/bc
+20	./.cache/mesa_shader_cache/5b
+8	./.cache/mesa_shader_cache/90
+8	./.cache/mesa_shader_cache/b3
+16	./.cache/mesa_shader_cache/26
+12	./.cache/mesa_shader_cache/37
+8	./.cache/mesa_shader_cache/3f
+16	./.cache/mesa_shader_cache/91
+8	./.cache/mesa_shader_cache/e7
+8	./.cache/mesa_shader_cache/2e
+8	./.cache/mesa_shader_cache/dd
+8	./.cache/mesa_shader_cache/17
+12	./.cache/mesa_shader_cache/c6
+8	./.cache/mesa_shader_cache/65
+8	./.cache/mesa_shader_cache/c0
+8	./.cache/mesa_shader_cache/9a
+8	./.cache/mesa_shader_cache/b9
+8	./.cache/mesa_shader_cache/ae
+8	./.cache/mesa_shader_cache/ed
+12	./.cache/mesa_shader_cache/78
+8	./.cache/mesa_shader_cache/2a
+12	./.cache/mesa_shader_cache/f9
+16	./.cache/mesa_shader_cache/6e
+8	./.cache/mesa_shader_cache/f0
+8	./.cache/mesa_shader_cache/da
+12	./.cache/mesa_shader_cache/07
+12	./.cache/mesa_shader_cache/33
+8	./.cache/mesa_shader_cache/8d
+8	./.cache/mesa_shader_cache/ee
+8	./.cache/mesa_shader_cache/7f
+16	./.cache/mesa_shader_cache/50
+8	./.cache/mesa_shader_cache/c2
+12	./.cache/mesa_shader_cache/98
+8	./.cache/mesa_shader_cache/08
+20	./.cache/mesa_shader_cache/54
+16	./.cache/mesa_shader_cache/03
+28	./.cache/mesa_shader_cache/8a
+16	./.cache/mesa_shader_cache/1e
+8	./.cache/mesa_shader_cache/a0
+12	./.cache/mesa_shader_cache/e4
+16	./.cache/mesa_shader_cache/89
+8	./.cache/mesa_shader_cache/95
+16	./.cache/mesa_shader_cache/b4
+20	./.cache/mesa_shader_cache/d0
+12	./.cache/mesa_shader_cache/cb
+12	./.cache/mesa_shader_cache/97
+8	./.cache/mesa_shader_cache/ef
+12	./.cache/mesa_shader_cache/4a
+12	./.cache/mesa_shader_cache/7c
+8	./.cache/mesa_shader_cache/ab
+12	./.cache/mesa_shader_cache/42
+20	./.cache/mesa_shader_cache/eb
+8	./.cache/mesa_shader_cache/7a
+8	./.cache/mesa_shader_cache/64
+20	./.cache/mesa_shader_cache/bf
+16	./.cache/mesa_shader_cache/c1
+12	./.cache/mesa_shader_cache/d9
+12	./.cache/mesa_shader_cache/99
+12	./.cache/mesa_shader_cache/02
+12	./.cache/mesa_shader_cache/14
+12	./.cache/mesa_shader_cache/51
+8	./.cache/mesa_shader_cache/3e
+8	./.cache/mesa_shader_cache/f2
+16	./.cache/mesa_shader_cache/b6
+8	./.cache/mesa_shader_cache/22
+8	./.cache/mesa_shader_cache/18
+12	./.cache/mesa_shader_cache/ff
+12	./.cache/mesa_shader_cache/7b
+12	./.cache/mesa_shader_cache/87
+8	./.cache/mesa_shader_cache/8c
+12	./.cache/mesa_shader_cache/c4
+8	./.cache/mesa_shader_cache/5c
+8	./.cache/mesa_shader_cache/3b
+12	./.cache/mesa_shader_cache/a1
+8	./.cache/mesa_shader_cache/1b
+8	./.cache/mesa_shader_cache/a5
+8	./.cache/mesa_shader_cache/69
+12	./.cache/mesa_shader_cache/d8
+16	./.cache/mesa_shader_cache/24
+8	./.cache/mesa_shader_cache/2c
+12	./.cache/mesa_shader_cache/e8
+16	./.cache/mesa_shader_cache/2d
+12	./.cache/mesa_shader_cache/68
+16	./.cache/mesa_shader_cache/9d
+12	./.cache/mesa_shader_cache/31
+12	./.cache/mesa_shader_cache/73
+12	./.cache/mesa_shader_cache/0a
+8	./.cache/mesa_shader_cache/82
+8	./.cache/mesa_shader_cache/1c
+12	./.cache/mesa_shader_cache/fa
+2548	./.cache/mesa_shader_cache
+4	./.cache/evolution/tasks/trash
+8	./.cache/evolution/tasks
+4	./.cache/evolution/mail/trash
+8	./.cache/evolution/mail
+4	./.cache/evolution/sources/trash
+8	./.cache/evolution/sources
+4	./.cache/evolution/calendar/trash
+8	./.cache/evolution/calendar
+4	./.cache/evolution/memos/trash
+8	./.cache/evolution/memos
+4	./.cache/evolution/addressbook/trash
+8	./.cache/evolution/addressbook
+52	./.cache/evolution
+12	./.cache/rhythmbox/album-art
+8	./.cache/rhythmbox/alternate-toolbar
+24	./.cache/rhythmbox
+4	./.cache/libgweather
+772	./.cache/gstreamer-1.0
+4	./.cache/yelp/WebKitCache/Version 16/Blobs
+12	./.cache/yelp/WebKitCache/Version 16
+16	./.cache/yelp/WebKitCache
+20	./.cache/yelp
+40	./.cache/.fr-ZrLIVP/javanotes/notes
+44	./.cache/.fr-ZrLIVP/javanotes
+48	./.cache/.fr-ZrLIVP
+5892	./.cache/tracker
+1173356	./.cache
+28	./week 1
+8032	./oops
+8	./Videos
+32	./6 week
+4	./.gphoto
+4	./.local/share/ibus-table
+4	./.local/share/applications
+8	./.local/share/vlc
+4	./.local/share/flatpak/db
+8	./.local/share/flatpak
+4	./.local/share/gnome-mines/scores
+8	./.local/share/gnome-mines
+92	./.local/share/xorg
+28	./.local/share/icc
+4	./.local/share/totem
+604	./.local/share/Trash/info
+4	./.local/share/Trash/expunged
+12	./.local/share/Trash/files/org/shapes
+16	./.local/share/Trash/files/org
+4	./.local/share/Trash/files/c
+692	./.local/share/Trash/files
+1304	./.local/share/Trash
+4	./.local/share/nautilus/scripts
+8	./.local/share/nautilus
+12	./.local/share/keyrings
+8	./.local/share/sounds/__custom
+12	./.local/share/sounds
+4	./.local/share/gnome-settings-daemon
+4	./.local/share/webkitgtk/deviceidhashsalts/1
+8	./.local/share/webkitgtk/deviceidhashsalts
+4	./.local/share/webkitgtk/localstorage
+16	./.local/share/webkitgtk
+252	./.local/share/shotwell/data
+256	./.local/share/shotwell
+8	./.local/share/evolution/tasks/system
+4	./.local/share/evolution/tasks/trash
+16	./.local/share/evolution/tasks
+4	./.local/share/evolution/mail/trash
+8	./.local/share/evolution/mail
+8	./.local/share/evolution/calendar/system
+4	./.local/share/evolution/calendar/trash
+16	./.local/share/evolution/calendar
+4	./.local/share/evolution/memos/trash
+8	./.local/share/evolution/memos
+4	./.local/share/evolution/addressbook/system/photos
+92	./.local/share/evolution/addressbook/system
+4	./.local/share/evolution/addressbook/trash
+100	./.local/share/evolution/addressbook
+152	./.local/share/evolution
+12	./.local/share/rhythmbox
+384	./.local/share/gvfs-metadata
+4	./.local/share/gnome-sudoku/finished
+12	./.local/share/gnome-sudoku
+60	./.local/share/grilo-plugins
+12	./.local/share/gnome-shell
+4	./.local/share/gstreamer-1.0/presets
+8	./.local/share/gstreamer-1.0
+9944	./.local/share/tracker/data
+9948	./.local/share/tracker
+972	./.local/share/backgrounds
+14136	./.local/share
+14140	./.local
+32	./week2
+12	./ogr/shapes
+16	./ogr
+28	./week 9
+2256	./dbms
+28	./week 7
+4	./.mozilla/extensions
+3056	./.mozilla/firefox/dniunrby.default-release/saved-telemetry-pings
+4	./.mozilla/firefox/dniunrby.default-release/crashes/events
+12	./.mozilla/firefox/dniunrby.default-release/crashes
+1376	./.mozilla/firefox/dniunrby.default-release/personality-provider
+4	./.mozilla/firefox/dniunrby.default-release/minidumps
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/3561288849sdhlie.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/2918063365piupsah.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/journals
+820	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+10616	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome/idb
+10624	./.mozilla/firefox/dniunrby.default-release/storage/permanent/chrome
+10628	./.mozilla/firefox/dniunrby.default-release/storage/permanent
+4	./.mozilla/firefox/dniunrby.default-release/storage/temporary
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.typingclub.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.typingclub.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ib7yzjgsnnipo-01--api.ibo.link/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ib7yzjgsnnipo-01--api.ibo.link
+60	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.keybr.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.keybr.com/idb/1746037503hyirsot.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.keybr.com/idb
+120	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.keybr.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tvsmotor.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tvsmotor.com
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++campus.w3schools.com/ls
+28	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++campus.w3schools.com
+60	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tutorialspoint.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tutorialspoint.com/idb/4061665934UASTEARD__HNBO_IATUC.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tutorialspoint.com/idb
+120	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.tutorialspoint.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hackerrank.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hackerrank.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++chat.openai.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++chat.openai.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++p22-ms3w-kxdlxru--api.xdiv.space/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++p22-ms3w-kxdlxru--api.xdiv.space
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/moz-extension+++d7a7951f-e77b-4324-8cd8-063ea8b6812d^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/moz-extension+++d7a7951f-e77b-4324-8cd8-063ea8b6812d^userContextId=4294967295/idb
+60	./.mozilla/firefox/dniunrby.default-release/storage/default/moz-extension+++d7a7951f-e77b-4324-8cd8-063ea8b6812d^userContextId=4294967295
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++tsdtocl.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++tsdtocl.com
+36	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/1975025290lbrdui--meegdairao-ts.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/551887895oefgfadr-ost.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/1119037936ptbc_edte.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/1773850371fetgsa-rsot.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/4170411019jeogbasr-ost.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/315746093sw.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/3713173747_s_edmban.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/2181795718meogdaerlo-ts.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb/3166453069wcaw.files
+448	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/idb
+1380	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/cache/morgue/210
+1396	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/cache/morgue/37
+2780	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/cache/morgue
+2884	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com/cache
+3376	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++web.whatsapp.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io/idb/1889610490syaetvirsufsa_cntoi.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io/idb/3531630654gbadt_eoi.files/journals
+376	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io/idb/3531630654gbadt_eoi.files
+588	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io/idb
+612	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.gate.io
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.geeksforgeeks.org/ls
+28	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.geeksforgeeks.org
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++myaadhaar.uidai.gov.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++myaadhaar.uidai.gov.in
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.oppo.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.oppo.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++mc.yandex.md/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++mc.yandex.md
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/http+++www.btechsmartclass.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/http+++www.btechsmartclass.com
+80	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/idb/2728594770keeryovtasl-.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/idb
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/105
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/11
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/152
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/52
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/194
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/95
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/97
+40	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue/82
+104	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache/morgue
+204	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com/cache
+344	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++best.aliexpress.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/ls
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/129
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/166
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/53
+656	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/110
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/252
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/90
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue/147
+708	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache/morgue
+792	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com/cache
+816	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dex-trade.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++auth0.openai.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++auth0.openai.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.typingtest.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.typingtest.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++rajbets.com/ls
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++rajbets.com/cache/morgue/181
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++rajbets.com/cache/morgue
+80	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++rajbets.com/cache
+104	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++rajbets.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++profile.w3schools.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++profile.w3schools.com
+72	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++is.alicdn.com/ls
+80	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++is.alicdn.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++win.pari-match-bet.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++win.pari-match-bet.in
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++promo.worldofwarships.asia/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++promo.worldofwarships.asia
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.recaptcha.net/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.recaptcha.net
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++forever21.abfrl.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++forever21.abfrl.in
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.indiamart.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.indiamart.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/1312079449yCt7-%iCd7b%-9p7r9e0f.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/1425997682yCt7-%pCl7a%y9e7r9-0l.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/2232182701SeesravbiacteaWDosrgk.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/3211250388sbwdpsunsohintoatciif.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/287151717LCo7g%sCD7a%t9a7b9a0s.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/652784445yCt7G%cCf7C%o9n7f9i0g.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/2480720545yCt7-%iCt7-%r9e7s9p0o.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/1143940324PCe7r%sCi7s%t9e7n9t0E.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb/2171031483YattIedMb.files
+516	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/idb
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/19
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/213
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/60
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/57
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/170
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/25
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/202
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/10
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/34
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/3
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/198
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/2
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/13
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/112
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/49
+80	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/222
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/48
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/107
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/189
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/108
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/45
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/46
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/106
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/158
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/173
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/254
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/207
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/125
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/85
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/110
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/30
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/177
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/144
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/62
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/100
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/211
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/215
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/83
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/74
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/238
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/66
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/61
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/55
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/235
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/192
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/121
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/241
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/203
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/190
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/137
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/212
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/84
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/165
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/71
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/234
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/114
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/58
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/59
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/81
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/169
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/44
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/247
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/183
+96	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/11
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/252
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/36
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/223
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/75
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/27
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/251
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/35
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/90
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/230
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/91
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/102
+92	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/128
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/180
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/117
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/86
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/17
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/159
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/205
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/8
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/32
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/178
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/65
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/116
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/140
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/176
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/33
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/50
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/12
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/131
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/47
+80	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/194
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/193
+84	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/98
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/54
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/141
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/89
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/187
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/214
+92	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/126
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/181
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/115
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/156
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/153
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/64
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/72
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/99
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/151
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/109
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/221
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/179
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/147
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/18
+168	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/87
+92	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/244
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/136
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/225
+88	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/157
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/218
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/24
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/249
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/96
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/240
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/68
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/148
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/73
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue/133
+2772	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache/morgue
+3416	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com/cache
+3956	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.youtube.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/ls
+48	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/60
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/111
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/80
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/10
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/237
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/198
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/7
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/139
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/53
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/189
+464	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/108
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/119
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/46
+36	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/118
+32	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/142
+216	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/173
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/120
+48	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/254
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/85
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/155
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/144
+96	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/62
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/123
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/100
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/61
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/248
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/235
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/21
+108	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/206
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/246
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/190
+40	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/212
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/208
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/58
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/81
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/79
+28	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/11
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/35
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/185
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/102
+264	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/128
+40	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/117
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/239
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/200
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/140
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/219
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/47
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/232
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/95
+112	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/214
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/115
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/42
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/150
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/197
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/64
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/72
+56	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/51
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/136
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/157
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/240
+300	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/231
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/68
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue/196
+2428	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache/morgue
+2572	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com/cache
+2596	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++my.exness.com
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hotstar.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hotstar.com/idb/2926346687feisraebbaatsaed--hte.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hotstar.com/idb/340685107feisraebbaatsaed--isn.files
+100	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hotstar.com/idb
+132	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.hotstar.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dialog.filepicker.io/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++dialog.filepicker.io
+68	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.includehelp.com/ls
+76	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.includehelp.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.pxfuel.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.pxfuel.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++clideo.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++clideo.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.pb77.co/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.pb77.co
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++utils.imimg.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++utils.imimg.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.digitalocean.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.digitalocean.com
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/idb/2939851545meosea_bdaat.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/idb/191574211msoder_ac.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/idb/1216905437mgonei_ktcra.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/idb/3486756633meotei_son.files
+208	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/idb
+12	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/cache/morgue/125
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/cache/morgue/211
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/cache/morgue
+104	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com/cache
+344	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.vedantu.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.web-tool.org/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.web-tool.org
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.amazon.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.amazon.in
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++stake.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++stake.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com/ls
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com/cache/morgue/186
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com/cache/morgue/147
+20	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com/cache/morgue
+92	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com/cache
+116	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.wevideo.com
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.w3schools.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.w3schools.com/idb/52296910_u_dna.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.w3schools.com/idb
+112	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.w3schools.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++voters.eci.gov.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++voters.eci.gov.in
+56	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.google.com/ls
+64	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.google.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++tr.snapchat.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++tr.snapchat.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++prebid.a-mo.net/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++prebid.a-mo.net/idb/3512897467axm.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++prebid.a-mo.net/idb
+76	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++prebid.a-mo.net
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ourhypespot.com/idb/2323548853sewsDaabta.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ourhypespot.com/idb
+60	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ourhypespot.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/idb/26758623sbtDaEtFs.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/idb/3922567490sbtDast.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/idb/2323548853sewsDaabta.files
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/idb/3793352433bblDokc.files
+196	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/idb
+8	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/cache/morgue/187
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/cache/morgue/24
+64	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/cache/morgue
+144	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net/cache
+364	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++en.savefrom.net
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.money9.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.money9.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.whatsappimages.in/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.whatsappimages.in
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.filepicker.io/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++www.filepicker.io
+36	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ssyoutube.com/ls
+4	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ssyoutube.com/idb/2323548853sewsDaabta.files
+52	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ssyoutube.com/idb
+96	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++ssyoutube.com
+16	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++alugha.com/ls
+24	./.mozilla/firefox/dniunrby.default-release/storage/default/https+++alugha.com
+14500	./.mozilla/firefox/dniunrby.default-release/storage/default
+25264	./.mozilla/firefox/dniunrby.default-release/storage
+3224	./.mozilla/firefox/dniunrby.default-release/security_state
+8	./.mozilla/firefox/dniunrby.default-release/weave/toFetch
+16	./.mozilla/firefox/dniunrby.default-release/weave/logs
+8	./.mozilla/firefox/dniunrby.default-release/weave/failed
+36	./.mozilla/firefox/dniunrby.default-release/weave
+12	./.mozilla/firefox/dniunrby.default-release/bookmarkbackups
+1360	./.mozilla/firefox/dniunrby.default-release/gmp-gmpopenh264/1.8.1.2
+1364	./.mozilla/firefox/dniunrby.default-release/gmp-gmpopenh264
+4	./.mozilla/firefox/dniunrby.default-release/datareporting/glean/pending_pings
+4	./.mozilla/firefox/dniunrby.default-release/datareporting/glean/tmp
+12	./.mozilla/firefox/dniunrby.default-release/datareporting/glean/db
+4	./.mozilla/firefox/dniunrby.default-release/datareporting/glean/events
+28	./.mozilla/firefox/dniunrby.default-release/datareporting/glean
+2184	./.mozilla/firefox/dniunrby.default-release/datareporting/archived/2024-02
+1580	./.mozilla/firefox/dniunrby.default-release/datareporting/archived/2024-03
+3768	./.mozilla/firefox/dniunrby.default-release/datareporting/archived
+3808	./.mozilla/firefox/dniunrby.default-release/datareporting
+32	./.mozilla/firefox/dniunrby.default-release/sessionstore-backups
+4	./.mozilla/firefox/dniunrby.default-release/browser-extension-data/amazondotcom@search.mozilla.org
+8	./.mozilla/firefox/dniunrby.default-release/browser-extension-data
+51992	./.mozilla/firefox/dniunrby.default-release
+4	./.mozilla/firefox/Pending Pings
+4	./.mozilla/firefox/Crash Reports/events
+12	./.mozilla/firefox/Crash Reports
+8	./.mozilla/firefox/rxdgp9tl.default
+52028	./.mozilla/firefox
+52036	./.mozilla
+32	./week 5
+520	./Desktop
+33956100	.
+
+18) cal: Displays the calendar.
+user@ramya:~$ cal 4 2024
+     April 2024       
+Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29 30     
+
+19) date: Displays the system date and time.
+user@ramya:~$ date +%d/%m/%y
+21/03/24
+
+20) who: Displays the list of users currently logged in
+user@ramya:~$ who
+user     :0           2024-03-21 14:27 (:0)
+       
+21) whoami: Displays the user id of the currently logged-in user.    
+user@ramya:~$ whoami
+user 

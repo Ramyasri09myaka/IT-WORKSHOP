@@ -1,0 +1,152 @@
+//CREATE A FILE AND FILENAME AS GREPFILE USIG CAT COMMAND 
+ cat> grepfile.txt
+welcome to ubuntu 
+unix and linux
+rgukt is one of the best university
+//GREP COMMAND IS USED FOR SEARCHING AND MANIPULATING TEXT PATTERENS WITHIN IN FILE
+//below command is used to display the given word matched  line
+user@ramya:~$ grep 'unix' grepfile.txt
+unix and linux
+// below -h command is used to display the matched line
+user@ramya:~$ grep -h 'and' grepfile.txt
+unix and linux
+//-n with grep command is used to display the given word matched line as well as matched line number
+user@ramya:~$ grep -n 'and' grepfile.txt
+2:unix and linux
+user@ramya:~$ grep -n 'one' grepfile.txt
+3:rgukt is one of the best university
+//-e with grep command is 
+user@ramya:~$ grep -e 'to' -e 'is' grepfile.txt
+welcome to ubuntu 
+rgukt is one of the best university
+cat> sortfile.txt
+ramya
+january
+febrary
+april 
+march
+^C
+user@ramya:~$ sort sortfile.txt
+april
+febrary
+january
+march
+ramya
+//sort according to alphabetical order
+user@ramya:~$ cat> sortfile.txt
+january
+febrarury
+march
+june
+august
+december
+^C
+//sort months accordings to months ina year
+user@ramya:~$ sort -M sortfile.txt 
+january
+febrarury
+march
+june
+august
+december
+//creating file
+user@ramya:~$ cat> sortfile.txt
+1
+45
+9
+23
+4
+58
+9
+0
+2^C
+//sort the numbers in numberformat
+user@ramya:~$ sort -n sortfile.txt 
+0
+1
+4
+9
+9
+23
+45
+58
+//sort the given numbers
+user@ramya:~$ sort  sortfile.txt 
+0
+1
+23
+4
+45
+58
+9
+9
+//reverse of ur given text
+sort -r sortfile.txt 
+9
+9
+58
+45
+4
+23
+1
+0
+//remove duplicates
+user@ramya:~$ sort -u sortfile.txt 
+0
+1
+23
+4
+45
+58
+9
+//reverse and remove duplicates
+ sort -ru sortfile.txt 
+9
+58
+45
+4
+23
+1
+0
+//to deltete the given word
+sed '/rgukt/d' sedfile.txt
+unix
+linux
+is a commands
+ubuntu
+ramya
+//complete line deleted 2nd line
+user@ramya:~$ sed '2d' sedfile.txt
+rgukt 
+linux
+is a commands
+ubuntu
+ramya
+cat> awtfile.txt
+ramya ubuntu od 7422
+akshaya window od 8762
+chaithu linux od 6543
+manasa unix od 7654
+user@ramya:~$ awk '{print $1)' awtfile.txt
+awk: line 1: extra ')'
+awk: line 2: missing } near end of file
+user@ramya:~$ awk '{print $1}' awtfile.txt
+ramya
+akshaya
+chaithu
+manasa
+user@ramya:~$ awk '{print $2.$4}' awtfile.txt
+ubuntu7422
+window8762
+linux6543
+unix7654
+user@ramya:~$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           7730        1166        4897         202        1666        6104
+Swap:          2047           0        2047
+user@ramya:~$ awk 'NS==2{printNS $0}' free -m
+awk: cannot open free (No such file or directory)
+user@ramya:~$ awk 'NR==2{print NR $0}' free -m
+awk: cannot open free (No such file or directory)
+
+
